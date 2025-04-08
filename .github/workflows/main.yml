@@ -28,7 +28,4 @@ jobs:
           username: ${{ secrets.DOCKER_USERNAME }}
          password: ${{ secrets.DOCKER_PASSWORD }}
 
-     # - run: docker build -t Mrice07/nodejs-app .
-
-      #- name: Push Docker image
-     #   run: docker push R15v2@8989/nodejs-app
+     
