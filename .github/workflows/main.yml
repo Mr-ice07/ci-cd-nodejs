@@ -27,6 +27,10 @@ jobs:
         with:
           username: ${{ secrets.DOCKER_USERNAME }}
           password: ${{ secrets.DOCKER_PASSWORD }}
+
+         - name: Debug Docker tag
+         run: echo "Image tag = ${{ secrets.DOCKER_USERNAME }}/nodejs-app"
+
       
       - name: Build Docker image
         run: docker build -t ${{ secrets.DOCKER_USERNAME }}/nodejs-app .
